@@ -1,0 +1,193 @@
+{
+  "nbformat": 4,
+  "nbformat_minor": 0,
+  "metadata": {
+    "colab": {
+      "provenance": [],
+      "authorship_tag": "ABX9TyPCS//4uz2beDSteUlCO9Q2",
+      "include_colab_link": true
+    },
+    "kernelspec": {
+      "name": "python3",
+      "display_name": "Python 3"
+    },
+    "language_info": {
+      "name": "python"
+    }
+  },
+  "cells": [
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "view-in-github",
+        "colab_type": "text"
+      },
+      "source": [
+        "<a href=\"https://colab.research.google.com/github/apccsdeguzman/DASTRUC/blob/main/ARRAYS\" target=\"_parent\"><img src=\"https://colab.research.google.com/assets/colab-badge.svg\" alt=\"Open In Colab\"/></a>"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "execution_count": null,
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "HDXRZwOVHVWi",
+        "outputId": "564278a4-b9a3-422d-813d-cab49af0ffa3"
+      },
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "1 - d\n",
+            "2 - e\n",
+            "3 - g\n",
+            "4 - u\n",
+            "5 - z\n",
+            "6 - m\n",
+            "7 - a\n",
+            "8 - n\n",
+            "Author: Charlemagne De Guzman\n"
+          ]
+        }
+      ],
+      "source": [
+        "import array as arr\n",
+        "\n",
+        "a = arr.array('u', ['d', 'e', 'g', 'u', 'z', 'm', 'a', 'n'])\n",
+        "\n",
+        "letter_dict = {}\n",
+        "for i in range(len(a)):\n",
+        "    letter_dict[i + 1] = a[i]\n",
+        "\n",
+        "\n",
+        "for index in range(1, len(a) + 1):\n",
+        "    print(f\"{index} - {letter_dict[index]}\")\n",
+        "\n",
+        "print(\"Author: Charlemagne De Guzman\")"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "import array as arr\n",
+        "\n",
+        "a = arr.array('u', ['d', 'e', 'g', 'u', 'z', 'm', 'a', 'n'])\n",
+        "\n",
+        "letter_dict = {}\n",
+        "for i in range(len(a)):\n",
+        "    letter_dict[i + 1] = a[i]\n",
+        "\n",
+        "print(\"First element is:\", letter_dict[1])\n",
+        "print(\"Second element is:\", letter_dict[2])\n",
+        "print(\"Third element is:\", letter_dict[3])\n",
+        "print(\"Fourth element is:\", letter_dict[4])\n",
+        "print(\"Fifth element is:\", letter_dict[5])\n",
+        "print(\"Sixth element is:\", letter_dict[6])\n",
+        "print(\"Seventh element is:\", letter_dict[7])\n",
+        "print(\"Eighth element is:\", letter_dict[8])\n",
+        "print(\"last element is:\", letter_dict[len(a)])\n",
+        "print(\"Second last element is:\", letter_dict[len(a) - 1])\n",
+        "print(\"Third last element is:\", letter_dict[len(a) - 2])\n",
+        "print(\"Fourth last element is:\", letter_dict[len(a) - 3])\n",
+        "print(\"Fifth last element is:\", letter_dict[len(a) - 4])\n",
+        "print(\"Sixth last element is:\", letter_dict[len(a) - 5])\n",
+        "print(\"Seventh last element is:\", letter_dict[len(a) - 6])\n",
+        "print(\"Eighth last element is:\", letter_dict[len(a) - 7])\n",
+        "\n",
+        "print(\"First element is:\", letter_dict[1])\n",
+        "\n",
+        "\n",
+        "for i in range(1, len(a) + 1):\n",
+        "    print(letter_dict[i], end=\" \")\n",
+        "print()\n",
+        "\n",
+        "print(\"Author: Charlemagne De Guzman\")"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "6C9ksYBBHwtn",
+        "outputId": "ec18a936-66e2-4429-c38f-71d382957475"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "First element is: d\n",
+            "Second element is: e\n",
+            "Third element is: g\n",
+            "Fourth element is: u\n",
+            "Fifth element is: z\n",
+            "Sixth element is: m\n",
+            "Seventh element is: a\n",
+            "Eighth element is: n\n",
+            "last element is: n\n",
+            "Second last element is: a\n",
+            "Third last element is: m\n",
+            "Fourth last element is: z\n",
+            "Fifth last element is: u\n",
+            "Sixth last element is: g\n",
+            "Seventh last element is: e\n",
+            "Eighth last element is: d\n",
+            "First element is: d\n",
+            "d e g u z m a n \n",
+            "Author: Charlemagne De Guzman\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "import array as arr\n",
+        "\n",
+        "a = arr.array('u', ['d', 'e', 'g', 'u', 'z', 'm', 'a', 'n'])\n",
+        "\n",
+        "letter_dict = {}\n",
+        "for i in range(len(a)):\n",
+        "    letter_dict[i + 1] = a[i]\n",
+        "\n",
+        "\n",
+        "for index in range(1, len(a) + 1):\n",
+        "    print(f\"{index} - {letter_dict[index]}\")\n",
+        "\n",
+        "length = len(a) # Changed my_array to a\n",
+        "\n",
+        "print(\"The length of the array is:\", length)\n",
+        "print(\"Author: Charlemagne De Guzman\")"
+      ],
+      "metadata": {
+        "id": "s6RthaO4H5Dj",
+        "outputId": "a26d6985-4e6b-4891-8adb-d21c48c07f8d",
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        }
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "1 - d\n",
+            "2 - e\n",
+            "3 - g\n",
+            "4 - u\n",
+            "5 - z\n",
+            "6 - m\n",
+            "7 - a\n",
+            "8 - n\n",
+            "The length of the array is: 8\n",
+            "Author: Charlemagne De Guzman\n"
+          ]
+        }
+      ]
+    }
+  ]
+}
